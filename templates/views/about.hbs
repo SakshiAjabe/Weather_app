@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLink}}
+    <style>
+        /* Add CSS to style the image */
+        .img-field {
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures the image doesn't stretch */
+        }
+    </style>
+</head>
+<body>
+    <!--navbar by express partials -->
+    {{>navbar}}
+    <!--Main header-->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!--left side div-->
+                    <div class="col-md-6 col-12 main_header_left align-items-center">
+                        <figure>
+                            <img src="images/myimage.jpg" alt="image" class="img-field" title="sakshi Ajabe">
+                        </figure>
+                    </div>
+                    <!--right side-->
+                    <div class="col-md-6 col-12 main_header_right">
+                        <p>Welcome to About Page</p>
+                        <h1>I am <span class="textclr">Sakshi Ajabe,</span> Pursuing BE in Artificial Intelligence And Data Science At Dr. D.Y. Patil Institute Of Technology, Pimpri, Pune.</h1>
+                        <a href="https://www.linkedin.com/in/sakshi-ajabe-811612274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <button>About Me</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer by express partials-->
+    {{>footer}}
+</body>
+</html>

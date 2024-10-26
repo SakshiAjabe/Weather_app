@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- header links by express partials-->
+    {{>headerLink}}
+</head>
+<body>
+    <!-- navbar by express partials -->
+    {{>navbar}}
+    <!--Main header-->
+    <div class="main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class=" main_header_left align-items-center">
+                    <figure class="errimg">
+                        <img src="images/404.png" alt="error" title="errorimage" class="img-fluid">
+                    </figure>
+                    <p>Welcome to Error Page. We know you dont like here</p>
+                    <h1>{{errorMsg}}</h1>
+                    <a href="/"><button>Go Back</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer by epxree partials-->
+    {{>footer}}
+</body>
+</html>
