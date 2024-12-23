@@ -11,6 +11,7 @@ const getInfo = async(event) => {
         city_name.innerText = "Please enter the city name before search";
         datahide.classList.add("data_hide");
     }
+
     else{
         try{
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=d3b4607d0139434b158b8a929408d3dd`;
@@ -38,11 +39,14 @@ const getInfo = async(event) => {
             }
             datahide.classList.remove('data_hide');
             cityVal = "";
-        } catch{
+        } 
+        catch{
             cityVal = "";
             datahide.classList.add("data_hide");
             city_name.innerText="Please enter correct city name";
         }
     }
 }
+
+
 submitBtn.addEventListener('click',getInfo);
